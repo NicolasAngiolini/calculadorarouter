@@ -1,12 +1,3 @@
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Calculadora</li></a>
-            <li><a href="pi.php">Numero Pi</li></a>
-            <li><a href="about.html">Acerca de</li></a>
-        </ul>
-    </nav>
-</body>
 <?php   
     require_once('operaciones.php');
 
