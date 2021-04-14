@@ -1,6 +1,6 @@
 <?php
 
-     include_once('C:\xampp\htdocs\WEB2\libs\operaciones.php');
+     include_once('operaciones.php');
 
      define('BASE_URL', '//'.$_SERVER['SERVER_NAME'] . ':' . 
      $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']).'/');
@@ -29,8 +29,12 @@
         case 'pi': 
             showPi(); 
             break;
+        case 'about':
+            aboutUs();
+            break;
         default: 
             echo('404 Page not found'); 
             break;
+        
     }
 ?>
