@@ -43,7 +43,6 @@ function aboutUs(){
      <h1>About us</h1>
      <p> echo por losotro </p>
      </body>');
-    
 
 }
 function home(){
@@ -86,6 +85,6 @@ function home(){
 
 }
     
-
+//ASDASD
 
 ?>
