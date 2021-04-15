@@ -54,12 +54,12 @@ function home(){
 
         function enviar(){
 
-            operacion = document.findbyId("action").value;
+            operacion = document.findbyId("ope").value;
             valor1 = document.findbyId("valor1").value;
             valor2 = document.findbyId("valor2").value;
 
             formulario = document.findbyId("formulario");
-            formulario.action = "'.BASE_URL.'" + operacion + "\" + valor1 + "\" +valor2 ";
+            formulario.action = "'.BASE_URL.'" + operacion + "/" + valor1 + "/" + valor2 ;
             formulario.submit;
             
             return false;
@@ -69,15 +69,16 @@ function home(){
     
         <h1>Calculadora</h1>
     
-        <form id="formulario" action="router.php" method="GET" onsubmit="enviar">
-            <input type="number" name="valor1">
-            <input type="number" name="valor2">
-            <select name="operacion" id="action">
+        <form id="formulario" action="route.php" method="GET" onsubmit="enviar()">
+            <input type="number" id="valor1">
+            <input type="number" id="valor2">
+            <select name="operacion" id="ope">
                 <option value="sumar">Sumar</option>
                 <option value="restar">Restar</option>
                 <option value="dividir">Dividir</option>
                 <option value="multiplicar">Multiplicar</option>
             </select>
+
             <input type="submit">
     
         </form>
