@@ -26,6 +26,12 @@
         case 'restar': 
             restar($params[1], $params[2]); 
             break;
+        case 'dividir': 
+            dividir($params[1], $params[2]); 
+            break;
+        case 'multiplicar': 
+            multiplicar($params[1], $params[2]); 
+            break;
         case 'pi': 
             showPi(); 
             break;

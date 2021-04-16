@@ -33,6 +33,4 @@ switch($operacion){
     }
 }
 
-echo('el resultado es: '.$resultado);
-
 ?>
